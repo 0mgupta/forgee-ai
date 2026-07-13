@@ -1,7 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  /* config options here */
+  serverExternalPackages: ['@cline/core', '@cline/sdk', '@cline/agents', '@cline/llms', '@cline/shared'],
 };
 
 export default nextConfig;
