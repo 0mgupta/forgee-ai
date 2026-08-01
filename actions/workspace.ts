@@ -6,7 +6,7 @@ import { db } from "@/lib/prisma";
 import type { WorkspaceUser, WorkspaceData } from "@/types/workspace";
 
 export type { WorkspaceUser, WorkspaceData } from "@/types/workspace";
-
+    
 // ─── Get the current authenticated user ──────────────────────────────────────
 
 export async function getWorkspaceUser(): Promise<WorkspaceUser> {
