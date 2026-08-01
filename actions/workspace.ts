@@ -12,7 +12,7 @@ export type { WorkspaceUser, WorkspaceData } from "@/types/workspace";
 export async function getWorkspaceUser(): Promise<WorkspaceUser> {
   const { userId: clerkId } = await auth();
   if (!clerkId) redirect("/");
-
+               
   const user = await db.user.findUnique({
     where: { clerkId },
     select: { id: true, credits: true, plan: true },
@@ -25,7 +25,7 @@ export async function getWorkspaceUser(): Promise<WorkspaceUser> {
 
 // ─── Get a workspace by id (must belong to the current user) ─────────────────
 
-export async function getWorkspaceById(
+export async function getWorkspaceById( 
   workspaceId: string,
   userId: string
 ): Promise<WorkspaceData> {
