@@ -5,7 +5,7 @@ import { Monitor, Smartphone } from "lucide-react";
 export function MobileBlocker() {
   return (
     <div className="flex min-h-[calc(100vh-3.5rem)] flex-col items-center justify-center bg-[#0a0a0a] px-6 text-center">
-      {/* Icon stack */}
+      {/* Icon stack */}       
       <div className="relative mb-8 flex items-center justify-center">
         <div className="flex h-24 w-24 items-center justify-center rounded-3xl border border-white/10 bg-white/5 shadow-2xl">
           <Monitor className="h-12 w-12 text-blue-400" />
